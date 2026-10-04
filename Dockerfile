@@ -15,7 +15,7 @@ WORKDIR /app
 COPY . .
 
 # Build the firewall
-RUN make clean && make build
+RUN make clean && make all
 
 # Set the entrypoint to run the firewall
 ENTRYPOINT ["./bin/firewall"]
