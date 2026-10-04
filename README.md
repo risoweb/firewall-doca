@@ -2,11 +2,11 @@
 
 ![Firewall DOCA](./assets/image_c4a47331(1).jpg)
 
-Projeto acadêmico/educacional de um firewall em linguagem C, com regras de filtragem de pacotes, suporte a portas e protocolos e execução em ambiente Docker.
+Firewall em linguagem C, com regras de filtragem de pacotes, suporte a portas e protocolos e execução em ambiente Docker.
 
 ## Visão geral
 
-Este projeto simula um firewall simples que:
+Firewall simples que:
 
 - armazena regras de entrada e saída;
 - verifica pacotes com base em IP, porta e protocolo;
