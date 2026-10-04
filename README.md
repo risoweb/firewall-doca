@@ -1,3 +1,4 @@
+![Firewall DOCA](./assets/firewall-doca-banner.png)
 # Firewall DOCA
 
 Implementação de firewall modular com suporte a regras customizáveis.
