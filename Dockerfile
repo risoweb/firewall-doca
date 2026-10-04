@@ -1,23 +1,22 @@
-# Usa a imagem oficial DOCA da NVIDIA
-FROM nvcr.io/nvidia/doca:latest
+# Use a lightweight base image
+FROM ubuntu:22.04
 
-# Define diretório de trabalho
-WORKDIR /app
-
-# Instala dependências adicionais
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    cmake \
-    git \
-    pkg-config \
-    libssl-dev \
+    gcc \
+    make \
     && rm -rf /var/lib/apt/lists/*
 
-# Copia o código fonte
+# Set working directory
+WORKDIR /app
+
+# Copy project files
 COPY . .
 
-# Compila o projeto
-RUN make
+# Build the firewall
+RUN make clean && make build
 
-# Comando padrão
-CMD ["/bin/bash"]
+# Set the entrypoint to run the firewall
+ENTRYPOINT ["./bin/firewall"]
+CMD []
