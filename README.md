@@ -1,6 +1,6 @@
 # Firewall DOCA
 
-![Firewall DOCA](./assets/firewall-doca-banner.png)
+![Firewall DOCA](./assets/image_c4a47331(1).jpg)
 
 Projeto acadêmico/educacional de um firewall em linguagem C, com regras de filtragem de pacotes, suporte a portas e protocolos e execução em ambiente Docker.
 
